@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{width:200px;height:200px;border:1px solid black;}
+			.box1{background:red}
+			.box2{background:green}
+			.box3{background: blanchedalmond;}
+		</style>
+		<script>
+			function setBox(name){
+				var oDiv=document.getElementById('div1');
+					oDiv.className=name;
+			}
+			
+//			function toRed(){
+//				var oDiv=document.getElementById('div1');
+//				oDiv.className='box1';
+//			}
+//			
+//			function toGreen(){
+//				var oDiv=document.getElementById('div1');
+//				oDiv.className='box2'
+//			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="变红" onclick="setBox('box3')"  onmouseover="setBox('box1')" onmouseout="setBox('box2')"/>
+		<div id="div1"></div>
+	</body>
+</html>

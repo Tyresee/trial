@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div1{
+				width:100px;height:200px;background: #CCC;display: none;
+			}
+			
+		</style>
+		<script>
+			function showHide(){
+				var oDiv=document.getElementById('div1');
+				if(oDiv.style.display=='block'){       //此行之关键在于这个双等号，用于判断！！！！
+					oDiv.style.display='none';
+				}
+				else{
+					oDiv.style.display='block';
+				}
+				
+				
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="xianshiyincang" onclick="showHide()"/>
+		<div id="div1"> 
+		what the fuck
+		</div>
+	</body>
+</html>

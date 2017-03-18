@@ -1,0 +1,27 @@
+<!DOCTYPE html>     
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div1{width:100px;height:100px;border:1px solid black;}
+			.box1{background:darkred;}
+			.box2{background:darkseagreen;}
+		</style>
+		<script>
+			function toRed(){
+				var oDiv=document.getElementById('div1');
+				oDiv.className='box1'         //因为class是js里的保留字，所以必须改用className来作为js中的类属性
+			}
+			
+			function toGreen(){
+				var oDiv=document.getElementById('div1');
+				oDiv.className='box2'
+			}
+		</script>
+	</head>
+	<body>
+		<input type="checkbox" value="变色" onmouseover="toRed()" onmouseout="toGreen()"/>
+		<div id="div1"></div>
+	</body>
+</html>

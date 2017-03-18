@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div {width:200px;height:200px;float:left;border:1px solid black;margin:10px;}
+			
+		</style>
+		
+		<script>
+			window.onload=function(){
+				var aDiv=document.getElementsByTagName('div');
+//				alert(aDiv.length);
+//				aDiv.style.background='red';    //这样做是不行的，因为在js中想要设置元素的样式的话，一次只能对一个元素进行设置。
+			
+//				var i=0;
+//				while(i<7){
+//				aDiv[i].style.background='green';	
+//				i++;
+//				}
+                
+				for(var i=0;i<aDiv.length;i++)   //初始化；条件；自增
+				{
+					aDiv[i].style.background='green';	//语句
+				}
+			
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>
